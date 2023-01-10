@@ -4,7 +4,7 @@ from experiment import Experiment
 
 def main() -> None:
     with open('config.xml', encoding='utf-8') as file:
-        config = file.read
+        config = file.read()
 
     experiment = Experiment(config)
     experiment.run()
